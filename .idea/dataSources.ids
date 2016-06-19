@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - gamesql@localhost" uuid="13e7d310-e5ed-4416-85a6-4f2b6d79df3a">
+    <database-info product="MySQL" version="5.7.9" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.2">
+      <schema id="1" name="gamesql"/>
+      <table id="2" parent="1" name="maps"/>
+      <table id="3" parent="1" name="items"/>
+      <routine id="4" parent="1" name="chooselvl">
+        <routine-kind>PROCEDURE</routine-kind>
+      </routine>
+      <routine id="5" parent="1" name="mapItems">
+        <routine-kind>PROCEDURE</routine-kind>
+      </routine>
+      <column id="6" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(4)</data-type>
+      </column>
+      <column id="7" parent="2" name="id_row">
+        <mandatory>1</mandatory>
+        <data-type>int(4)</data-type>
+      </column>
+      <column id="8" parent="2" name="Rows">
+        <mandatory>1</mandatory>
+        <data-type>varchar(27)</data-type>
+      </column>
+      <column id="9" parent="2" name="levels">
+        <mandatory>1</mandatory>
+        <data-type>int(2)</data-type>
+      </column>
+      <key id="10" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="11" parent="3" name="Level">
+        <mandatory>1</mandatory>
+        <data-type>int(2)</data-type>
+      </column>
+      <column id="12" parent="3" name="cordon">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <argument id="13" parent="4" name="idlvl">
+        <direction>IN</direction>
+        <data-type>int(2)</data-type>
+      </argument>
+      <argument id="14" parent="5" name="idlvl">
+        <direction>IN</direction>
+        <data-type>int(2)</data-type>
+      </argument>
+    </database-model>
+  </data-source>
+</component>
